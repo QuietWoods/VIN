@@ -1,0 +1,123 @@
+{
+  "WMI":{
+    "WVW":"Volkswagen",
+	"WVG":"Volkswagen",
+	"WV2":"Volkswagen Nutzfahrzeuge"
+  },
+  "VMODEL":{
+    "A":"Basic (A8B)",
+	"B":{
+		"7H":"Beach (A9A)",
+		"7P":"Basic offroad (A8B+1Y1)",
+		"1K":"Basic (A8B)"
+	},
+	"C":{
+		"7H":"Comfortline (A9W)",
+		"7N":"Comfort(A8C)",
+		"1K":"Cross(A8T)",
+		"16":"Comfort(A8C)"
+	},	
+	"S":{
+		"16":"Sport (A8F)",
+		"1K":"Sport (A8F)",
+		"1F":"Sport (A8F)",
+		"13":"Sport (1.4l / 90 kW+118kW (A8F) and 2.0l / 155 kW (A8I))"
+	},
+	"R":"Top sport (A9R)",
+	"T":{
+	    "1K":"Top sports equipments / Gti (A8H)",
+		"3C":"Alltrack (A8T)"
+	},
+	"P":"Highline (A8G)",
+	"E":"Track&Style (A8G)",
+	"L":"Luxury (A8D)",
+	"F":"5 seats (A9S)",
+	"V":"4 seats (A8S)",
+	"D":"Highline (A8Z)",
+	"G":"Comfortline (A8E)"
+  },
+  "MOTOR":{
+    "1":"1.4l / 118 kW 16V TSI (D4L+7MD)", 
+	"2":"2.0l / 188kW 16V turbo FSI (D81+7MS)",
+	"3":"3.0l / 176 kW 24V V6 TDI (D50+0GG)",
+	"4":"1.4l / 90 kW TSI (D4X+7MS)",
+	"5":"3.0l / 180 kW 24V V6 TDI (D43+0GG)",
+    "6":"1.4l / 118 kW 16V TSI (D4L+7MS)", 
+	"8":"2.0l / 150 kW (7MS)",
+	"A":"2.0l / 150 kW (7MH)",
+	"B":"3.0l / 213 kW 24V TFSI (D12+7MS)",
+	"C":"3.6l / 206 kW 24V VR6 FSI (D3B+7MH)",
+	"D":"3.0l / 245 kW 24V Hybrid TFSI (D19+7MS)",
+	"E":"3.0l / 184 kW 24V VR6 FSI (DC2+7MS)",
+	"F":"turbo diesel engine 2.0l /103kw 4V TDI (D91+0GG)",
+    "G":"1.2l / 77 KW TSI (DB0+7MS)",  	
+	"P":"2.0l / 155 kW 16V turbo FSI (D2D+7MS)", 
+	"J":"1.8l / 118kW 16V turbo FSI (D67+7MS)",
+	"K":"2.0l / 125 kW 16V turbo FSI (D6G+7MH)",
+	"H":"2.0l / 125 kW 16V turbo FSI (D6G+7MS)",
+	"R":{
+		"16":"2.0l / 147 kW 16V turbo FSI (D2L+7MS)", 
+		"7N":"2.0l / 147 kW 16V turbo FSI (D2L+7MS)", 
+		"1K":"2.0l / 155kW 16V turbo FSI (D2D+7MS)",
+		"1F":"2.0l / 155kW 16V turbo FSI (D2D+7MS)",
+		"3C":"2.0l / 155kW 16V turbo FSI (D2D+7MS)",
+		"13":"2.0l / 155kW 16V turbo FSI (D2D+7MS)"
+	},
+	"V":"3.6l / 206 kW 24V VR6 FSI (D3B+7MS)",
+	"W":"3.6l / 206 kW 24V VR6 FSI (D3B+7MS)",
+	"X":{
+		"7P":"4.2l / 265 kW 32V FSI (DH3*+7MS)",
+		"3D":"4.2l / 246 kW 40V V8 (D0G+7MS)"
+	},	
+	"Y":"4.2l / 246 kW 40V V8 (D0G+0GG)",
+	"Z":"6.0l / 331 kW WR12 48V (D0T+7MD)"
+  },
+  "RESTRAINT":{
+    "0":"Airbag for driver and passenger without side airbags (4UF+4X0)",
+    "1":"Airbag for driver and passenger, side airbags front seats, headairbags (4UE+4X3)", 
+	"2":"Airbag for driver and passenger, side airbags front and rear seats, headairbags (4UE+4X4)",
+	"3":"Airbag for driver and passenger, side airbags front seats, headairbags (4UF+4X3)",
+	"4":"Airbag for driver and passenger, side airbags front and rear seats, headairbags (4UF+4X4)",
+	"5":"Airbag for driver and passenger, incl. knee airbag (4UP+4X3)", 
+    "6":{
+	   "1K":"Curtain air bag sports seat folding racing bucket seat (4UP+6C0)", 
+	   "13":"Curtain air bag sports seat folding racing bucket seat (4UP+6C0)", 
+	   "7P":"Airbag for driver and passenger (4UE)"	
+	},
+	 "7":{
+	   "7N":"Airbag for driver and passenger, side airbags front and rear seats, headairbags (4UP+4X4)",
+	   "3D":"Airbag for driver and passenger, side airbags front and rear, headairbags (4UE+4X4)"
+	},
+	"8":"Airbag for driver and passenger, side airbags front seats, headairbags front and rear seats (4UF+4X7)",
+	"A":"Curtain air bag sports seat folding racing bucket seat rear side airbag (4UP+6C1)",	
+	"9":"Airbag for driver and passenger with Knee air bag (4UP)"
+  },
+  "VTYPE":{
+    "16":"Beetle",
+	"1K":"Golf/Golf Plus/Golf Variant/Golf Cabriolet",
+	"13":"Scirocco",
+	"1F":"EOS",
+	"5N":"Tiguan",
+	"7N":"Sharan",
+	"3C":"Magotan",
+	"7P":"Touareg NF",
+	"3D":"Phaeton",
+	"7H":"Multivan GP/Caravelle GP/T5 GP California"
+  },
+  "YEAR":{
+    "B":"2011",
+    "C":"2012",
+	"D":"2013",
+    "E":"2014"
+  },
+  "ASSEMBLY":{
+    "M":"Volkswagen de Mexico",
+	"W":"Volkswagen AG Wolfsburg, Germany",
+	"K":"Volkswagen Osnabrück GmbH, Germany",
+	"V":"Autoeuropa, Portugal",
+	"D":"Volkswagen Slovakia",
+	"E":"Volkswagen AG Emden, Germany",
+	"8":"Automobilmanufaktur Dresden, Germany",
+	"H":"Volkswagen Nutzfahrzeuge, Germany"
+  }  
+}

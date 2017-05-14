@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>解析VIN码</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <style>
+    .container {
+    width: 100%;
+    }
+    .navbar-form {
+    padding: 0px;
+    margin-top: 0px;
+    }
+    .vin-list-item-row {
+    margin-right: 0px;
+    margin-left: 0px;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <nav class="navbar navbar-default  navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Brand</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">Link</a>
+                        </li>
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Something else here</a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                                <li>
+                                    <a href="#">One more separated link</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Another action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Something else here</a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="jumbotron">
+                <h1>VIN解析</h1>
+                <p>这是一个VIN解析系统，您可以任选任意正确格式的VIN码进行解析。</p>
+                <p><form class="navbar-form navbar-left " action="/vin_parse" method="post">
+                {% csrf_token %}
+                <input type="text" class="form-control" placeholder="请输入要解析的VIN码" name="vin" value="{{vin}}">
+                <button type="submit" class="btn btn-primary">搜索</button>
+            </form>
+            </div>
+                {% if rlt != None %}
+               <div class="panel panel-primary">
+                <div class="panel-heading">解析结果：</div>
+                <div class="panel-body">
+                    <p>{{rlt}}
+                    </p>
+                </div>
+               </div>
+                {% endif %}
+
+                {% if content != None %}
+                  <div class="panel panel-primary">
+                 <div class="panel-heading">解析结果：</div>
+                <ul class="list-group ">
+                    {% for k, v in content.items %}
+                    <li class="list-group-item row vin-list-item-row">
+                        <label class="col-md-3">{{k}}</label><span  class="col-md-9">
+                        {% if v == 'null'  %}
+                            无
+                        {% else %}{{v}}{% endif %}</span></li>
+                    {% endfor %}
+                </ul>
+                       </div>
+                {% endif %}
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
